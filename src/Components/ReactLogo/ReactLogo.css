@@ -1,0 +1,32 @@
+.Logo {
+    text-align: center;
+  }
+  
+  .ReactLogo-logo {
+    height: 20vmin;
+    pointer-events: none;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .ReactLogo-logo {
+      animation: ReactLogo-logo-spin infinite 20s linear;
+    }
+  }
+  
+  .ReactLogo-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+  }
+  
+  @keyframes ReactLogo-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
