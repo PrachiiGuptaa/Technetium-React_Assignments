@@ -1,0 +1,38 @@
+*{
+    background-color: whitesmoke;
+}
+
+.container {
+    text-align: center;
+    width: 25vw;
+    height: 35vh;
+    text-align: center;
+    margin: auto;
+    margin-top: 30vh;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  p {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  button {
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    border-radius: 5px;
+    border: none;
+    background-color: #0077FF;
+    color: white;
+  }
+  
+  button:hover {
+    cursor: pointer;
+    background-color: #005FCC;
+  }
+  
