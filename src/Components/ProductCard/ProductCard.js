@@ -1,59 +1,65 @@
-import React from 'react'
+import React from 'react';
+import Data from '../Data/Data';
 import './ProductCard.css'
 
 function ProductCard() {
 
-    const productDetails = [{
-        productId : '1',
-        productPic : 'https://m.media-amazon.com/images/I/51Vf9GcpU6L._UL1140_.jpgy.jpg',
-        productName : 'SHOES',
-        brand : 'Jordan',
-        productDescription : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse saepe voluptates tempora exercitationem, labore deleniti.',
-        price : '10$',
-        rating : 'Rating : 4'
-    },
-    {
-        productId : '2',
-        productPic : 'https://m.media-amazon.com/images/I/61GG-qbomcL._SX466_.jpg',
-        productName : 'WATCH',
-        brand : 'Titan',
-        productDescription : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse saepe voluptates tempora exercitationem, labore deleniti.',
-        price : '14$',
-        rating : 'Rating : 4.5'
-    },
-    {
-        productId : '3',
-        productPic : 'https://cdn.lookastic.com/teal-jeans-original-2787297.jpg',
-        productName : 'TROUSERS',
-        brand : 'Red Tape',
-        productDescription : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse saepe voluptates tempora exercitationem, labore deleniti.',
-        price : '8$',
-        rating : 'Rating : 3.8'
-    }]
-
-    function alertProductDetails (item) {
-        alert(`Product ID is ${item.productId} which is ${item.productName} of brand ${item.brand} has of ${item.price} is added to the cart, Please proceed to Pay!`);
-
-    } 
-
+  const productDetailsList = [
+{
+    productId : "1",
+    productPic : "https://m.media-amazon.com/images/I/51Vf9GcpU6L._UL1140_.jpgy.jpg" ,
+    productName : "SHOES" ,
+    Brand : "Jordan",
+    productDescription : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse saepe voluptates tempora exercitationem, labore deleniti.", 
+    Price : "10$",
+    Rating : "4",
+ },
+ {
+    productId : "2",
+    productPic : "https://m.media-amazon.com/images/I/61GG-qbomcL._SX466_.jpg" ,
+    productName : "WATCH" ,
+    Brand : "Titan",
+    productDescription : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse saepe voluptates tempora exercitationem, labore deleniti.", 
+    Price : "14$",
+    Rating : "4.5",
+ },
+ {
+    productId : "3",
+    productPic : "https://cdn.lookastic.com/teal-jeans-original-2787297.jpg" ,
+    productName : "TROUSERS" ,
+    Brand : "Red Tape",
+    productDescription : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse saepe voluptates tempora exercitationem, labore deleniti.", 
+    Price : "8$",
+    Rating : "3.8",
+ },
+ {
+    productId : "4",
+    productPic : "https://img.freepik.com/premium-photo/blue-hoodie-mockup-sweatshirt-with-pocket-insulated-white-background_124507-29139.jpg?w=2000",
+    productName : "HOODIE" ,
+    Brand : "Puma",
+    productDescription : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse saepe voluptates tempora exercitationem, labore deleniti.", 
+    Price : "12$",
+    Rating : "4.8",
+ },
+ {
+    productId : "5",
+    productPic : "https://mediamodifier.com/blog/wp-content/uploads/2023/02/024a07bc0217e804ffeda5f96ed49e08_mm-showroom-image-1024x683.jpg",
+    productName : "T-SHIRT" ,
+    Brand : "Allen Solly",
+    productDescription : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse saepe voluptates tempora exercitationem, labore deleniti.", 
+    Price : "18$",
+    Rating : "4.8",
+ },
+];
+ 
   return (
-    <div className='container'>
-    
-      {
-            productDetails.map(item => <div className='wrapper'>
-                <img src = {item.productPic} alt='Product'/>
-                <h6>{item.productId}</h6>
-                <h3>{item.productName}</h3>
-                <h4>{item.brand}</h4>
-                <p>{item.productDescription}</p>
-                <h2>{item.price}</h2>
-                <p>{item.rating}</p>
-                <button className = 'btn' onClick={()=>{alertProductDetails(item)}}>ADD TO CART</button>
-
-            </div>)
-        }   
+    <div className="wrapper">
+      {productDetailsList.map((productDetails) => (
+        <Data
+        key = {productDetails.productId} productDetails = {productDetails}/>
+      ))}
     </div>
-  )
+  );
 }
 
-export default ProductCard
+export default ProductCard;

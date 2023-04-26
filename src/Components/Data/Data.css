@@ -1,0 +1,37 @@
+*{
+    background-color: whitesmoke;
+}
+
+.data img{
+    height: 125px;
+    width: 125px;
+    margin-top: 2vh;
+}
+
+.data{
+    height: 73vh;
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 1rem;
+}
+
+.btn{
+    height: 10vh;
+    width: 25vw;
+    border: none;
+    background-color: rgba(37,199,163,255);
+    color: white;
+    border-radius: 0rem 0rem 1rem 1rem;
+}
+
+.data h2, h3, h4, h6{
+    line-height: 0;
+}
+
+.data p{
+     padding: 0rem 1rem ; 
+}

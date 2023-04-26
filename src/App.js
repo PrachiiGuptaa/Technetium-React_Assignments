@@ -1,4 +1,4 @@
-import ProductCard from './Components/ProductCard/ProductCard';
+import ProductCard from "./Components/ProductCard/ProductCard";
 
 function App() {
   return (
