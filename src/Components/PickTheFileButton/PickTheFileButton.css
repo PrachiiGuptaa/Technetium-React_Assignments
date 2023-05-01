@@ -1,0 +1,18 @@
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  button:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(27, 240, 109, 0.5);
+  }
+  
+.inputBox {
+    display: none;
+  }
+
+  
