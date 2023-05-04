@@ -1,0 +1,13 @@
+.image{
+    height: 50vh;
+    width: 30vw;
+}
+
+.btn {
+    border: none; 
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 4px;
+    margin-top: 20px;
+  }
+  
