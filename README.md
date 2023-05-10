@@ -14,3 +14,7 @@ Assignment10 : useRef-ChangePicture
 Assignment11 : Dog Fetch API-Show New Dog Image on every page refresh
 Assignment12 : Create Card By Fetching API
 Assignment13 : Generate OTP-POST Method
+Assignment14 : Dog Image Changer - Axios
+Assignment15 : Generate OTP-POST Method - Axios
+Assignment16 : Responsive Navbar
+Assignment17 : Horizontal Scrollbar
