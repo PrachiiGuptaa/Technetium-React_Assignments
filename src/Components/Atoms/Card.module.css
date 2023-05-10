@@ -1,0 +1,35 @@
+
+.card {
+    display: inline-block;
+    width: 250px;
+    height: 250px;
+    margin-top: 180px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color: lightgray;
+    border-radius: 25px;
+    box-shadow: 2px 2px 2px gray;    
+  }
+  
+  .image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .name {
+    margin-bottom: 5px;
+    font-size: 18px;
+  }
+  
+  .designation {
+    margin-bottom: 0px;
+    font-size: 14px;
+    line-height: 0px;
+  }
+  
+  .experience {
+    font-size: 14px;
+    line-height: 5px;
+  }
+  

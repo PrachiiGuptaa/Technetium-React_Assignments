@@ -1,0 +1,7 @@
+.scrollbar {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: scroll;
+    overflow-y: hidden;
+  }
+  
