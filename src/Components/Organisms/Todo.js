@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Task from '../Atoms/Task';
 import CreateTask from '../Molecules/CreateTask';
-import '../Styles/Styles.css';
+import './Todo.css';
 
 function Todo() {
     const [tasksRemaining, setTasksRemaining] = useState(0);
@@ -43,7 +43,7 @@ function Todo() {
     return (
         <div className="todo-container">
             <div className="header">Pending tasks ({tasksRemaining})</div>
-            <div className="tasks">
+            <div className="task">
                 {tasks.map((task, index) => (
                     <Task
                     task={task}

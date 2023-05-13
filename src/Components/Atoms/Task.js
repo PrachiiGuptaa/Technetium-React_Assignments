@@ -1,4 +1,4 @@
-import '../Styles/Styles.css';
+import React from "react";
 
 export default function Task({ task, index, completeTask, removeTask }) {
     return (
