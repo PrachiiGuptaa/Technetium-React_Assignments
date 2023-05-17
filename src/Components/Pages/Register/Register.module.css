@@ -1,0 +1,67 @@
+.register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+  }
+  
+  .registerContent img {
+    text-align: center;
+    border-radius: 50px;
+    box-shadow: 5px 6px 6px gray;
+    height: 80vh;
+  }
+
+  @media only screen and (max-width: 768px) and (min-width: 660px){
+    .registerContent img {
+        text-align: center;
+        border-radius: 50px;
+        box-shadow: 5px 6px 6px gray;
+        height: 70vh;
+      }
+  }
+
+  @media only screen and (max-width: 659px) and (min-width: 600px){
+    .registerContent img {
+        text-align: center;
+        border-radius: 50px;
+        box-shadow: 5px 6px 6px gray;
+        height: 65vh;
+      }
+  }
+
+  @media only screen and (max-width: 599px) and (min-width: 545px){
+    .registerContent img {
+        text-align: center;
+        border-radius: 50px;
+        box-shadow: 5px 6px 6px gray;
+        height: 60vh;
+      }
+  }
+
+  @media only screen and (max-width: 544px) and (min-width: 460px){
+    .registerContent img {
+        text-align: center;
+        border-radius: 50px;
+        box-shadow: 5px 6px 6px gray;
+        height: 50vh;
+      }
+  }
+
+  @media only screen and (max-width: 459px) and (min-width: 380px){
+    .registerContent img {
+        text-align: center;
+        border-radius: 50px;
+        box-shadow: 5px 6px 6px gray;
+        height: 40vh;
+      }
+  }
+
+  @media only screen and (max-width: 379px){
+    .registerContent img {
+        text-align: center;
+        border-radius: 50px;
+        box-shadow: 5px 6px 6px gray;
+        height: 30vh;
+      }
+  }

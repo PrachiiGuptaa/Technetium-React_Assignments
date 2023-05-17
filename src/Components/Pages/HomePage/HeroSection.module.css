@@ -1,0 +1,84 @@
+.wrapper{
+    position: relative;
+    width: 100%;
+    min-height: 553px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('https://img.freepik.com/free-photo/abstract-surface-textures-white-concrete-stone-wall_74190-8189.jpg?w=740&t=st=1683459755~exp=1683460355~hmac=9d6da9f08d074fdf4092120dc910ac22bccd5d2c6c60fe7b409bed1bbcd6b36e');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    margin-top: -20px;
+}
+.wrapper img{
+    width: 500px;
+    bottom: 90px;
+    right: 100px;
+}
+.container{
+    padding: 0 50px ;
+}
+.container h1{
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #2c3968;
+}
+.container p{
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #073980;
+}
+.btn{
+    padding: 0.6rem 1rem;
+    background: #002D62;
+    color: white;
+    font-weight: 400;
+    border-radius: 2rem;
+    margin-top: 1rem;
+}
+.btn:hover{
+    background-color: #005A9C;
+    transition: 0.2s ease;
+}
+@media only screen and (max-width: 768px) and (min-width: 450px) {
+    .wrapper {
+      flex-direction: column-reverse;
+      align-items: flex-start;
+    }
+    .wrapper img {
+      position: relative;
+      width: 100%;
+      bottom: initial;
+      right: initial;
+      margin-bottom: 20px;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0 20px;
+        margin-left: 8rem;
+        margin-right: 8rem;
+        margin-bottom: 2rem;
+    }
+  }
+@media only screen and (max-width: 449px) {
+    .wrapper {
+      flex-direction: column-reverse;
+      align-items: flex-start;
+    }  
+    .wrapper img {
+      position: relative;
+      width: 100%;
+      bottom: initial;
+      right: initial;
+      margin-bottom: 20px;
+    }
+    .container {
+        margin-bottom: 2rem;
+    }
+  }
