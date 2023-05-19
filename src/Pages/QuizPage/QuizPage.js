@@ -5,6 +5,7 @@ import Button from '../../Atoms/Button/Button';
 import Timer from '../../Atoms/Timer/Timer';
 import TestResults from '../TestResults/TestResults';
 import { questionsData } from './../../ConstantData/Constant';
+import styles from './QuizPage.module.css'
 
 const QuizPage = () => {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
@@ -61,25 +62,34 @@ const QuizPage = () => {
   }, [timeRemaining]);
 
   return (
-    <div>
+    <div className={styles.wrapper}>
       {!showScores ? (
-        <div>
-          <Question question={questionsData[currentQuestionIndex].Question} />
+        <div className={styles.container}>
+          <div className={styles.question}>
+          <Question question={questionsData[currentQuestionIndex].Question} /></div>
+          <div className={styles.option}>
           <Options
             options={questionsData[currentQuestionIndex].Options}
             selectedOptionIndex={selectedOptions[currentQuestionIndex]}
             handleOptionSelect={handleOptionSelect}
           />
+          </div>
+          <div className={styles.btncontainer}>
+            <div className={styles.btn}>
           <Button
             currentQuestionIndex={currentQuestionIndex}
             handleNextButtonClick={handleNextButtonClick}
             submitTest={submitTest}
             totalQuestions={questionsData.length}
           />
+          </div>
+          </div>
           <Timer timeRemaining={timeRemaining} setTimeRemaining={setTimeRemaining} submitTest={submitTest} />
-        </div>
+          </div>
       ) : (
+        <div className={styles.result}>
         <TestResults score={score} questionsData={questionsData} />
+        </div>
       )}
     </div>
   );

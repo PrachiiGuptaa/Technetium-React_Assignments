@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import styles from './Timer.module.css';
 
 const Timer = ({ timeRemaining, setTimeRemaining, submitTest }) => {
   useEffect(() => {
@@ -25,7 +26,7 @@ const Timer = ({ timeRemaining, setTimeRemaining, submitTest }) => {
     return `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
   };
 
-  return <div className="timer">Time Remaining: {formatTime(timeRemaining)}</div>;
+  return <div className={styles.timer}>Time Remaining: {formatTime(timeRemaining)}</div>;
 };
 
 export default Timer;

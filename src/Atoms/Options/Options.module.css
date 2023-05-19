@@ -1,0 +1,13 @@
+.options {
+  margin-bottom: 20px;
+}
+  
+.options label {
+  display: block;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+  
+.options input[type="radio"] {
+  margin-right: 10px;
+}  
