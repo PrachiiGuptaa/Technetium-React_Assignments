@@ -1,0 +1,22 @@
+.container{
+    text-align: center;
+    list-style: none;
+    margin-top: 0;
+}
+
+.statesName{
+    margin-left: 20.4rem;
+    width: 35.2rem;
+    height: 30rem;
+    padding-left: 3rem;
+    padding-right: 1em;
+    text-align: left;
+    overflow-y: scroll;
+    background-color: white; 
+    box-shadow: 4px 4px 4px gray; 
+}
+
+.statesName li{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}

@@ -1,0 +1,35 @@
+.search-bar {
+    position: relative;
+    margin-left: 360px;
+    margin-top: 50px;  
+  }
+  
+  .search-bar input {
+    border-radius: 40px;
+    padding: 12px 30px 10px 60px;
+    width: 55%;
+    border: none;
+    font-size: 18px;
+    box-shadow: 1px 1px 5px gray;
+    outline: none;
+  }
+
+  .search-bar h3{
+    margin-left: 13rem;
+  }
+  
+  .icon {
+    position: absolute;
+    top: 75%;
+    transform: translateY(-50%);
+  }
+  
+  .search-icon {
+    left: 20px;
+    font-size: 1.2rem;
+  }
+  
+  .voice-icon {
+    left: 590px;
+    font-size: 1.5rem;
+  }
