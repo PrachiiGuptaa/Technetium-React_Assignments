@@ -26,6 +26,7 @@ const TodoList = () => {
   return (
     <div>
       <div>
+      <h3>ToDo List</h3>
         <input
           type="text"
           value={newTodo}
@@ -35,10 +36,10 @@ const TodoList = () => {
       </div>
       <ul>
         {todos.map((todo) => (
-          <li key={todo.id}>
+          <li key={todo.id} style={{listStyle:"none"}}>
             <span>{todo.name}</span>
             <button onClick={() => handleToggleStatus(todo.id)}>
-              {todo.status === 'pending' ? 'Completed' : 'Pending'}
+              {todo.status === 'pending' ? 'Pending' : 'Completed'}
             </button>
           </li>
         ))}
