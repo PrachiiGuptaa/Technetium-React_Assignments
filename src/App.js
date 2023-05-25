@@ -7,7 +7,7 @@ import store from './store';
 const App = () => {
   return (
     <div className='App'>
-      <div className='App-header'>
+      <div>
     <Provider store={store}>
       <TodoList />
     </Provider>
