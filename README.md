@@ -23,3 +23,5 @@ Assignment19 : ToDo List
 Assignment20 : Routing
 Assignment21 : Add Delete Users
 Assignment22 : Quiz App
+Assignment23 : AutoComplete Search Bar
+Assignment24 : ToDo_Redux
