@@ -1,6 +1,7 @@
 # Technetium-React_Assignments
 
-Assignment1_Part1 : Create UI
+### Assignment1_Part1 :
+Create UI
 Assignment1_Part2 : Create UI with Components folder
 Assignment2 : Intivation Email using Props
 Assignment3 : Profile Card Maker
